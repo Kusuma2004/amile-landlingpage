@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.card {
+    @apply p-6 rounded-lg shadow-lg text-white cursor-pointer;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  
+  .card:hover {
+    @apply shadow-2xl;
+  }
+  .scrollbar-hidden {
+    overflow: -moz-scrollbars-none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; 
+  }
